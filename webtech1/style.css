@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fcffd0;
+  font-family: Arial;
+  color:#333;
+}
+
+.header {
+    background-color: #fcffd0;
+    font-family: Calibri;
+    padding: 5px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    display: block;
+    color: #fcffd0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #fcffd0;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 50px;
+}
+
+.column.middle {
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 50px;
+}
+
+.column.quote {
+    width: 25%;
+    font-family: 'Courier New';
+    margin-top: 50px;
+}
+
+.column.bal {
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.column.jobb {
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.column.form {
+    width: 40%;
+    text-align: justify;
+    text-justify: inter-word;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.vall {
+    float: left;
+    padding: 10px;
+}
+
+.vall.bal {
+    width: 33%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.vall.kozep {
+    width: 34%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.vall.jobb {
+    width: 33%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.lab {
+    float: left;
+    padding: 10px;
+}
+
+.lab.egy {
+    width: 25%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.lab.ketto {
+    width: 25%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.lab.harom {
+    width: 25%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.lab.negy {
+    width: 25%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#indexleiras{
+    color: black;
+    font-size: 18px;
+    }
+    
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fcffd0;
+    padding: 10px;
+    text-align: center;
+}
+
+.personTable{
+    width:100%;
+}
+
+.personTable tr{
+    height:40px;
+}
+
+.personTable input {
+    height:25px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+.personTable select{
+    width:170px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+.personTable #calculate{
+        
+        height:30px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 60px;
+        text-align: center;
+        font-size: 16px;
+        margin: 40px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-left: 180px;
+}
+
+.wrapper{
+    text-align: center;
+}

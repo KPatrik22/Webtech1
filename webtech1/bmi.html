@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+<title>BMI</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" >
+<script src="jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <h1 id="mouseEnter">BMI Kalkulátor</h1>
+</div>
+
+<div class="topnav">
+    <a href="index.html" id="link0" >Főoldal</a>
+    <a href="mell.html"id="link1">Mellizom</a>
+    <a href="vall.html" id="link2">Vállizom</a>
+    <a href="tricepsz.html"id="link3">Tricepsz</a>
+    <a href="bicepsz.html" id="link4">Bicepsz</a>
+    <a href="hat.html"id="link5">Hátizom</a>
+    <a href="lab.html" id="link6">Lábizom</a>
+    <a href="bmi.html" id="link7">BMI kalkulátor</a>
+    <a href="https://shopbuilder.hu/gyakorlatok-a2256" id="link8">Forrás</a>
+  </div>
+
+<div class="row">
+  <div class="column side">
+    <h3>BMI (testtömeg index) kalkulátorunk segítségével megtudhatja, hogy mennyi az Ön BMI értéke, és az melyik tartományba esik.</h3>
+    <h3>Osztályozás (Kg/m2)
+    </h3>
+    <ul>
+      <li>Súlyos soványság: &lt;16 </li>
+      <li>Mérsékelt soványság 16 - 16,99</li>
+      <li>Enyhe soványság: 17 - 18,49</li>
+      <li style="font-weight:bold">Normál: 18,5 - 24,99</li>
+      <li>Túlsúly: 25 - 29,99</li>
+      <li>I. fokú elhízás: 30 - 34,99</li>
+      <li>II.fokú elhízás: 35 - 39,99</li>
+      <li>III. fokú elhízás: >40</li>
+    </ul>
+  </div>
+  <div class="column form">
+        <form>
+                <table class="personTable">                   
+                    <tr>
+                        <td>Testsúly (kg):</td>
+                        <td>
+                            <input type="number" id="personWeight" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Magasság (cm):</td>
+                        <td>
+                            <input type="number" id="personHeight" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nem:</td>
+                        <td>
+                            <input type="radio" id="gender_male" name="gender" value="male"/> Férfi    
+                            <br>  
+                            <input type="radio" id="gender_female" name="gender" value="female"/> Nő       
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>Színválasztó:</td>
+                      <td>
+                        <input type="color" id="colorpicker" value="#000000">
+                      </td>
+                  </tr>
+                    <tr>
+                        <td colspan="2">
+                           <span class="wrapper"> <input type="button" id="calculate" value="Számolás" /> </span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+
+  <div class="column side">
+    <h2>Az Ön BMI értéke: </h2>
+    <h2><div id="bmi"></div></h2>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Kolozsvári Patrik - WYQ5JK</p>
+</div>
+</body>
+</html>
